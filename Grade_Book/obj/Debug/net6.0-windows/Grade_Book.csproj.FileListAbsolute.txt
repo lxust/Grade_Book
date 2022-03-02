@@ -1,0 +1,17 @@
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.csproj.AssemblyReference.cache
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.Form1.resources
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.csproj.GenerateResource.cache
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.GeneratedMSBuildEditorConfig.editorconfig
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.AssemblyInfoInputs.cache
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.AssemblyInfo.cs
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.csproj.CoreCompileInputs.cache
+E:\Work_Visual\Grade_Book\Grade_Book\bin\Debug\net6.0-windows\Grade_Book.exe
+E:\Work_Visual\Grade_Book\Grade_Book\bin\Debug\net6.0-windows\Grade_Book.deps.json
+E:\Work_Visual\Grade_Book\Grade_Book\bin\Debug\net6.0-windows\Grade_Book.runtimeconfig.json
+E:\Work_Visual\Grade_Book\Grade_Book\bin\Debug\net6.0-windows\Grade_Book.dll
+E:\Work_Visual\Grade_Book\Grade_Book\bin\Debug\net6.0-windows\Grade_Book.pdb
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.dll
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\refint\Grade_Book.dll
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.pdb
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\Grade_Book.genruntimeconfig.cache
+E:\Work_Visual\Grade_Book\Grade_Book\obj\Debug\net6.0-windows\ref\Grade_Book.dll
