@@ -6,23 +6,15 @@ using System.Threading.Tasks;
 
 namespace Grade_Book
 {
-    internal class Teacher
+    public class Teacher
     {
-        public Teacher(string? name, string? surname, string? subject, string password, string login)
-        {
-            Name = name;
-            Surname = surname;
-            Subject = subject;
-            Puples = new List<Puple>();
-            Password = password;
-            Login = login;
-        }
-        public string? Name;
-        public string? Surname;
-        public string? Subject;
-        public string Password;
-        public string Login;
-        public const string UserType = "teacher";
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public string? Surname { get; set; }
+        public string Password { get; set; }
+        public string Login { get; set; }
+        public Subject _Subject { get; set; }
+        public Role UserRole { get; set; }
 
         public List<Puple> Puples;
     }

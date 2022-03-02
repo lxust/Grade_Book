@@ -2,6 +2,7 @@
 
 namespace Grade_Book
 {
+   
     public partial class Form1 : Form
     {
         List<Teacher> teachers = new List<Teacher>();
@@ -68,14 +69,18 @@ namespace Grade_Book
             string password = tbAuthorizationPassword.Text;
 
             var teacher = teachers.FirstOrDefault(x => x.Login == login && x.Password == password);
-
+           
             if (teacher != null)
             {
+                int test;
                 courentTeacher = teacher;
                 FillInfo(teacher);
                 AccessFields(false, true);
                 FillDgv();
+                tbAuthorizationLogin.Clear();
+                tbAuthorizationPassword.Clear();
             }
+            
                 
 
         }
@@ -94,6 +99,11 @@ namespace Grade_Book
             FillInfo(a);
             AccessFields(false, true);
             FillDgv();
+            tbRegisterLogin.Clear();
+            tbRegisterPassword.Clear();
+            tbRegisterName.Clear();
+            tbRegisterSurname.Clear();
+            tbRegisterObject.Clear();
         }
 
         private void btnAddPuple_Click(object sender, EventArgs e)
@@ -103,6 +113,11 @@ namespace Grade_Book
             string _class = tbAddPupleClass.Text;
             int _age = Convert.ToInt32(tbAddPupleAge.Text);
             courentTeacher.Puples.Add(new Puple(name, surname, _age, _class));
+            tbAddPupleAge.Clear();
+            tbAddPupleClass.Clear();
+            tbAddPupleName.Clear();
+            tbAddPupleSurname.Clear();
+            
         }
 
         private void btnAddGrade_Click(object sender, EventArgs e)
@@ -116,7 +131,14 @@ namespace Grade_Book
             if (puple != null)
             {
                 if (grade < 6 && grade > 1)
+                {
                     puple.Grades.Add(grade);
+                    tbAddGradeClass.Clear();
+                    tbAddGradeName.Clear();
+                    tbAddGradeSurname.Clear();
+                    tbAddGrade.Clear();
+                }
+                    
             }
             
 
@@ -144,6 +166,8 @@ namespace Grade_Book
             tbAddPupleClass.Enabled = workspace;
             tbAddPupleName.Enabled = workspace;
             tbAddPupleSurname.Enabled = workspace;
+            textBox1.Enabled = workspace;
+            btnTop.Enabled = workspace;
 
             btnAuthorization.Enabled = authForm;
             tbAuthorizationLogin.Enabled = authForm;
@@ -153,6 +177,7 @@ namespace Grade_Book
             tbRegisterName.Enabled = authForm;
             tbRegisterObject.Enabled = authForm;
             tbRegisterPassword.Enabled = authForm;
+            tbRegisterSurname.Enabled = authForm;
         }
 
         private void FillDgv()
@@ -193,5 +218,21 @@ namespace Grade_Book
             else
                 FillDgv(textBox1.Text);
         }
+        private void TopGrade()
+        {
+            //var grade = courentTeacher.Puples.Where(x => x.Grades == grade);
+        }
+
+        private void tbAddGrade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

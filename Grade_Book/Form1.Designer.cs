@@ -83,6 +83,8 @@
             this.lblName1 = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblObject = new System.Windows.Forms.Label();
+            this.btnTop = new System.Windows.Forms.Button();
+            this.lbl1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPuple)).BeginInit();
             this.SuspendLayout();
             // 
@@ -512,6 +514,7 @@
             this.tbAddGrade.Name = "tbAddGrade";
             this.tbAddGrade.Size = new System.Drawing.Size(100, 23);
             this.tbAddGrade.TabIndex = 45;
+            this.tbAddGrade.TextChanged += new System.EventHandler(this.tbAddGrade_TextChanged);
             // 
             // btnAddGrade
             // 
@@ -547,11 +550,32 @@
             this.lblObject.Size = new System.Drawing.Size(0, 15);
             this.lblObject.TabIndex = 49;
             // 
+            // btnTop
+            // 
+            this.btnTop.Location = new System.Drawing.Point(285, 6);
+            this.btnTop.Name = "btnTop";
+            this.btnTop.Size = new System.Drawing.Size(75, 23);
+            this.btnTop.TabIndex = 50;
+            this.btnTop.Text = "Найти";
+            this.btnTop.UseVisualStyleBackColor = true;
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Location = new System.Drawing.Point(180, 9);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(99, 15);
+            this.lbl1.TabIndex = 51;
+            this.lbl1.Text = "Лучшая оценка: ";
+            this.lbl1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 392);
+            this.ClientSize = new System.Drawing.Size(728, 392);
+            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.btnTop);
             this.Controls.Add(this.lblObject);
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblName1);
@@ -667,5 +691,7 @@
         private Label lblName1;
         private Label lblSurname;
         private Label lblObject;
+        private Button btnTop;
+        private Label lbl1;
     }
 }

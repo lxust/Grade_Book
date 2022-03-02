@@ -6,22 +6,17 @@ using System.Threading.Tasks;
 
 namespace Grade_Book
 {
-    internal class Puple
+    public class Puple
     {
-        public Puple(string Name, string Surname, int Age, string Class)
-        {
-            this.Name = Name;
-            this.Surname = Surname;
-            this.Age = Age;
-            this.Class = Class;
-            Grades = new List<int>();
-        }
-        public string Name;
-        public string Surname;
-        public int Age;
-        public string Class;
-        public const string UserType = "puple";
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Age { get; set; }
+        public string Class { get; set; }
+        public Role UserRole { get; set; }
+        public Subject _Subject { get; set; }
 
         public List<int> Grades;
     }
+
 }
